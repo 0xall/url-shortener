@@ -35,6 +35,9 @@ dbConnection.connect(app, (err) => {
 app.set('views', config.VIEW_FILES_DIRECTORY);
 app.set('view engine', 'ejs');
 
+// set port
+app.set('port', config.PORT);
+
 // use post, cookie, and session
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
