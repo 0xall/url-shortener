@@ -22,4 +22,8 @@ config.ERROR_HANDLER = expressErrorHandler({
     }
 });
 
+// database information
+config.DATABASE_URL = 'mongodb://localhost:27017/url_shortener';
+config.DATABASE_SCHEMAS = [];
+
 module.exports = config;
