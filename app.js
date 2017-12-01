@@ -10,6 +10,7 @@ var expressSession = require('express-session');
 var expressErrorHandler = require('express-error-handler');
 
 var msg = require('./core/message');
+var routing = require('./core/routing');
 
 var app = express();
 
@@ -45,6 +46,9 @@ const staticDirectories = config.STATIC_FILES_DIRECTORIES;
 for (var i = 0; i < staticDirectories.length; ++i) {
     app.use(express.static(staticDirectories[i]));
 }
+
+// load routers
+routing.register(app, config.ROUTERS);
 
 // load error handler
 app.use(expressErrorHandler.httpError(404));
