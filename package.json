@@ -1,0 +1,23 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "URL shortening service implemented by node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seungwon-kang/url-shortener.git"
+  },
+  "keywords": [
+    "URL",
+    "shortening"
+  ],
+  "author": "Seungwon Kang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seungwon-kang/url-shortener/issues"
+  },
+  "homepage": "https://github.com/seungwon-kang/url-shortener#readme"
+}
