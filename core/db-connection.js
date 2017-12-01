@@ -1,6 +1,7 @@
 
 var config = require('../config');
 
+var path = require('path');
 var mongodb = require('mongodb');
 var mongoose = require('mongoose');
 
