@@ -24,7 +24,9 @@ config.ERROR_HANDLER = expressErrorHandler({
 
 // database information
 config.DATABASE_URL = 'mongodb://localhost:27017/url_shortener';
-config.DATABASE_SCHEMAS = [];
+config.DATABASE_SCHEMAS = [
+    { file: './schemas/user-schema', collection: 'user', schemaName: 'userSchema', modelName: 'userModel' },
+];
 
 // router information
 config.ROUTERS = [];
