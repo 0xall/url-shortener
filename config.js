@@ -26,4 +26,7 @@ config.ERROR_HANDLER = expressErrorHandler({
 config.DATABASE_URL = 'mongodb://localhost:27017/url_shortener';
 config.DATABASE_SCHEMAS = [];
 
+// router information
+config.ROUTERS = [];
+
 module.exports = config;
