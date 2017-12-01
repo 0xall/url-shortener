@@ -26,6 +26,9 @@ dbConnection.connect(app, (err) => {
     }
 
     msg.success(message);
+
+    // load schemas
+    dbConnection.loadSchemas(config.DATABASE_SCHEMAS);
 });
 
 // use ejs view
