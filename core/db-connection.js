@@ -8,6 +8,8 @@ var mongoose = require('mongoose');
 var dbConnection = { };
 var database = null;
 
+mongoose.Promise = global.Promise;
+
 dbConnection.connect = function(app, callback) {
     
     mongoose.connect(config.DATABASE_URL, {
